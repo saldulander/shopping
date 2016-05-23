@@ -9,6 +9,7 @@ get "product/:permalink", to: "products#show", as: "product"
 post "product/:permalink", to: "products#buy", as: "buy"
 root to: "products#index"
 
+get "basket", to: "orders#show"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
